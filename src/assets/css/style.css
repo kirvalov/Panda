@@ -10,6 +10,12 @@ html {
 
 body {
     font-size: 1.6rem;
+    min-height: 100vh;
+    background-image: url(../img/Checkout-bg.jpg);
+    background-size: cover;
+    font-family: 'Yandex Sans Regular', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 1280px) {
@@ -24,8 +30,105 @@ body {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     html {
         font-size: 7px;
     }
+}
+
+@font-face {
+    font-family: 'Yandex Sans Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/assets/fonts/Yandex_Sans_Text_Office_Regular.ttf); 
+}
+
+@font-face {
+    font-family: 'Yandex Sans Bold';
+    font-style: bold;
+    font-weight: 700;
+    src: url(/assets/fonts/Yandex_Sans_Text_Office_Bold.ttf);
+}
+
+a {
+    text-decoration: none;
+}
+
+.onboarding{
+flex: 1;
+}
+
+.footer{
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 2rem 0;
+}
+
+.container{
+    padding: 0 1rem;
+    max-width: 1280px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    max-width: 390px;
+    margin: 0 auto;
+}
+
+.lang-switcher{
+    display: flex;
+    cursor: pointer;
+}
+
+.lang-switcher__img{
+    height: 1.3rem;
+    width: auto;
+    margin-right: 0.4rem;
+    vertical-align: middle;
+}
+
+.help__link{
+    color: #fff;
+    transition: opacity .3s ease;
+}
+
+.help__link:hover{
+    opacity: 0.6;
+}
+
+.copyright__link{
+    color: #fff;
+    transition: opacity .3s ease;
+}
+
+.copyright__link:hover{
+    opacity: 0.6;
+}
+
+.onboarding__inner{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+.logo__yandex{
+margin-right: 1rem;
+}
+
+.logo{
+    width: 100%;
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.auth-form{
+    background-color: #fff;
+    border-radius: 0.4rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    width: 100%;
+    height: 500px; 
 }
