@@ -1,0 +1,51 @@
+{
+  "name": "panda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npm run clean:dist && npm run build && pm2 start ./src/server.js",
+    "start": "webpack-dev-server --config webpack.config.js --hot --open --watch --mode=development",
+    "build": "npm run clean:dist && webpack --config webpack.config.js --mode=production",
+    "rimraf": "rimraf",
+    "stop": "pm2 stop server",
+    "pm2": "pm2",
+    "clean:dist": "npm run rimraf -- dist",
+    "restart": "npm run stop && npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirvalov/Panda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kirvalov/Panda/issues"
+  },
+  "homepage": "https://github.com/kirvalov/Panda#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.47",
+    "@babel/preset-env": "^7.0.0-beta.47",
+    "babel-loader": "^8.0.0-beta.2",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "i": "^0.3.6",
+    "npm": "^6.9.0",
+    "pm2": "^2.10.3",
+    "rimraf": "^2.6.2",
+    "static-server": "^2.2.1",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "pm2": "^2.10.3",
+    "raw-loader": "^0.5.1",
+    "static-server": "^2.2.1",
+    "style-loader": "^0.21.0",
+    "webpack-dev-server": "^3.2.1",
+    "whitepaper-bem": "^1.0.2"
+  }
+}
