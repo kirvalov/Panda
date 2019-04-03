@@ -1,0 +1,104 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <link rel="stylesheet" href="https://whitepaper.tools/cdn/whitepaper-1.0.0.min.css">
+  <title>Yandex Checkout</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+  <main class="onboarding">
+    <div class="container">
+      <div class="onboarding__inner">
+        <div class="logo">
+          <a href="https://yandex.ru/" class="logo__yandex"><img src="/assets/img/yandex.svg"></a>
+          <a href="https://kassa.yandex.ru/" class="logo__checkout"><img src="/assets/img/checkout.svg"></a>
+        </div>
+        <form class="auth-form">
+          <div class="auth-form__title">Onboarding</div>
+          <div class="tabs">
+            <div class="tabs__title">Where the company is registered</div>
+            <div class="tabs__control">
+              <div class="tab one">
+                <input type="radio" id="tab_1" name="tab-group-1" checked value="in_russia">
+                <label class="tab__label" for="tab_1">In Russia</label>
+              </div>
+              <div class="tab two">
+                <input type="radio" id="tab-2" name="tab-group-1" value="outside_russia">
+                <label class="tab__label" for="tab-2">Outside of Russia</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-content">
+            <div id="inside_content" class="content__in-russia">
+              <div class="company-name">
+                <div class="company-name__title">Full company name or TIN (INN)</div>
+                <div class="company-name__input-container"><input class="input-field" type="text"></div>
+                <div class="company-name__description">Entrepreneurs can be found by first and last
+                  name.
+                  If you are not an entrepreneur or legal entity, use the
+                  <a class="link" href="https://money.yandex.ru/quickpay/">Yandex.Money forms and
+                    buttons</a>.
+                </div>
+              </div>
+            </div>
+
+            <div id="outside_content" class="content__outside-russia hidden">
+              <div class="country">
+                <div class="country__title">Country</div>
+                <div class="country__selector">
+                  <select name="countries-select" id="">
+                    <option value="" selected disabled hidden>Select Country</option>>
+                    <option value="Abkhazia">Abkhazia</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Algeria">Algeria</option>
+                  </select>
+                </div>
+              </div>
+              <div class="company-type">
+                <div class="company-type__title">Company type</div>
+                <div class="company-type__radio-buttons">
+                  <div class="radio_one">
+                    <input type="radio" class="radio-button" id="radio_1" name="radio-1" checked>
+                    <label class="radio__label" for="radio_1">Corporation</label>
+                  </div>
+                  <div class="radio_two">
+                    <input type="radio" class="radio-button" id="radio-2" name="radio-1">
+                    <label class="radio__label" for="radio-2">Entrepreneur</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="form__actions">
+            <button class="actions__button">Continue</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="help">
+          <a class="help__link " href="https://yandex.ru/support/checkout/">Help</a>
+        </div>
+        <div class="lang-switcher">
+          <img class="lang-switcher__img" src="/assets/img/english.svg" alt="English language">
+          <span>En</span>
+        </div>
+        <div class="copyright">© 2019 NBCO <a class="copyright__link"
+            href="https://money.yandex.ru/about.xml">Yandex.Money</a> LLC</div>
+      </div>
+    </div>
+  </footer>
+<script type="text/javascript" src="main.750fb9d27f28cad0492c.js"></script></body>
+
+</html>
