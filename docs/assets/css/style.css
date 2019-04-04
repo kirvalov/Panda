@@ -15,6 +15,7 @@ body {
   font-family: 'Yandex Sans Regular', Arial, sans-serif;
   display: flex;
   flex-direction: column;
+  background-color: #0b1734;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -66,14 +67,14 @@ body {
   font-family: 'Yandex Sans Regular';
   font-style: normal;
   font-weight: 400;
-  src: url(/assets/fonts/Yandex_Sans_Text_Office_Regular.ttf);
+  src: url('../fonts/Yandex_Sans_Text_Office_Regular.ttf');
 }
 
 @font-face {
   font-family: 'Yandex Sans Bold';
   font-style: bold;
   font-weight: 700;
-  src: url(/assets/fonts/Yandex_Sans_Text_Office_Bold.ttf);
+  src: url('../fonts/Yandex_Sans_Text_Office_Bold.ttf');
 }
 
 a {
